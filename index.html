@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AC New Horizons Bug/Fish Helper</title>
+        <script src="./javascript.js"></script> <!--External-->
+        <link rel="stylesheet" type="text/css" href="index.css"> <!--External-->
+        <link href="https://fonts.googleapis.com/css2?family=Muli:wght@400;600&display=swap" rel="stylesheet">
+    </head>
+    <body onload="setup()" onresize="displayLengthCalc();displayResults()"> <!--body onload works, putting in div deeper didn't-->
+        <div id="top-section">
+        <!--Welcome-->
+            <h1>Fish and Bug Helper Tool</h1>
+            <div class="top-info">
+                <h2>Animal Crossing New Horizons </h2>
+                <p>This tool displays the avaliable fish and bug spawns depending on the time and date of your game</p>
+            </div>
+        </div>    
+        <!--Input-->
+        <div id="input">
+            <div class="time-selection">
+                <h2>Time</h2>
+                <div class="hemisphereSelect">
+                    <button id="northernButton"
+                    onclick="selectHemisphere(1)">Northern Hemisphere</button>
+                    <button id="southernButton" 
+                    onclick="selectHemisphere(2)">Southern Hemisphere</button>
+
+                    <p id="hemiOutput"></p>
+                </div>
+                <br>
+                <div class="monthSelect">
+                    <button id="januaryButton"
+                    onclick="toggleMonth(1)">January</button>
+                    <button id="feburaryButton"
+                    onclick="toggleMonth(2)">Feburary</button>
+                    <button id="marchButton"
+                    onclick="toggleMonth(3)">March</button>
+                    <button id="aprilButton"
+                    onclick="toggleMonth(4)">April</button>
+                    <button id="mayButton"
+                    onclick="toggleMonth(5)">May</button>
+                    <button id="juneButton"
+                    onclick="toggleMonth(6)">June</button>
+                    <button id="julyButton"
+                    onclick="toggleMonth(7)">July</button>
+                    <button id="augustButton"
+                    onclick="toggleMonth(8)">August</button>
+                    <button id="septemberButton"
+                    onclick="toggleMonth(9)">September</button>
+                    <button id="octoberButton"
+                    onclick="toggleMonth(10)">October</button>
+                    <button id="novemberButton"
+                    onclick="toggleMonth(11)">November</button>
+                    <button id="decemeberButton"
+                    onclick="toggleMonth(12)">December</button>
+                    
+                    <p id="monthOutput"></p>
+                </div>
+            </div>
+            <div class="showSelect">
+                <h2>Show</h2>
+                <button id="fishToggle" onclick="toggleFishDisplay()">Fish</button>
+                <button id="bugToggle" onclick="toggleBugDisplay()">Bugs</button>
+            
+                <p id="toggleOutputs"></p>
+            </div>
+        </div>
+        <br>
+        <!--Output-->
+        <div class="output">
+            <div id="table-results">
+                <div id="fish-table">
+                </div>
+                <div id="bug-table">
+                </div>
+            </div>    
+        </div>
+        <!--
+        <div class=“table-body-cell”>
+            <div id="fish-image">
+                <img id="fish-1-image">
+            </div>
+            <div id="fish-class">
+                <h3 id="fish-1-class">Bitterling</h3>
+            </div>
+            <div id="fish-price">
+                <p id="fish-1-price">900 Bells</p>
+            </div>
+            <div id="fish-location">
+                <p id="fish-1-location">Pond</p>
+            </div>
+            <div id="fish-time">
+                <p id="fish-1-time">4pm-9am</p>
+            </div>
+        </div>
+        -->
+    </body>
+</html>
