@@ -1,0 +1,19 @@
+{
+  "name": "animal-crossing-nh-fanmade-bug-and-fish-tool-helper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "javascript.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jamesrbrtsn/Animal-Crossing-NH-Fanmade-Bug-and-Fish-Tool-Helper.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jamesrbrtsn/Animal-Crossing-NH-Fanmade-Bug-and-Fish-Tool-Helper/issues"
+  },
+  "homepage": "https://github.com/Jamesrbrtsn/Animal-Crossing-NH-Fanmade-Bug-and-Fish-Tool-Helper#readme"
+}
