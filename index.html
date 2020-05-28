@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>AC New Horizons Bug/Fish Helper</title>
+        <title>AC Seasonal Critters</title>
         <script src="./javascript.js"></script> <!--External-->
+
         <link rel="stylesheet" type="text/css" href="index.css"> <!--External-->
         <link href="https://fonts.googleapis.com/css2?family=Muli:wght@400;600&display=swap" rel="stylesheet">
     </head>
     <body onload="setup()" onresize="displayLengthCalc();displayResults()"> <!--body onload works, putting in div deeper didn't-->
         <div id="top-section">
         <!--Welcome-->
-            <h1>Fish and Bug Helper Tool</h1>
+            <h1>Seasonal Critters Tracker</h1>
             <div class="top-info">
-                <h2>Animal Crossing New Horizons </h2>
                 <p>This tool displays the avaliable fish and bug spawns depending on the time and date of your game</p>
             </div>
         </div>    
         <!--Input-->
         <div id="input">
             <div class="time-selection">
-                <h2>Time</h2>
+                <h2>Hemisphere</h2>
                 <div class="hemisphereSelect">
                     <button id="northernButton"
                     onclick="selectHemisphere(1)">Northern Hemisphere</button>
@@ -27,7 +27,7 @@
 
                     <p id="hemiOutput"></p>
                 </div>
-                <br>
+                <h2>Month</h2>
                 <div class="monthSelect">
                     <button id="januaryButton"
                     onclick="toggleMonth(1)">January</button>
@@ -37,6 +37,7 @@
                     onclick="toggleMonth(3)">March</button>
                     <button id="aprilButton"
                     onclick="toggleMonth(4)">April</button>
+                    <br>
                     <button id="mayButton"
                     onclick="toggleMonth(5)">May</button>
                     <button id="juneButton"
@@ -45,6 +46,7 @@
                     onclick="toggleMonth(7)">July</button>
                     <button id="augustButton"
                     onclick="toggleMonth(8)">August</button>
+                    <br>
                     <button id="septemberButton"
                     onclick="toggleMonth(9)">September</button>
                     <button id="octoberButton"
@@ -58,9 +60,9 @@
                 </div>
             </div>
             <div class="showSelect">
-                <h2>Show</h2>
-                <button id="fishToggle" onclick="toggleFishDisplay()">Fish</button>
-                <button id="bugToggle" onclick="toggleBugDisplay()">Bugs</button>
+                <h2>Display</h2>
+                <button id="fishToggle" onclick="toggleFishDisplay()">Hide Fish</button>
+                <button id="bugToggle" onclick="toggleBugDisplay()">Hide Bugs</button>
             
                 <p id="toggleOutputs"></p>
             </div>

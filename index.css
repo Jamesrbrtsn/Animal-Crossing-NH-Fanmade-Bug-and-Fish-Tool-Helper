@@ -21,7 +21,7 @@ h1{
     display: table;  
     float: right;       
     vertical-align: middle;  
-    width: 50%;
+    width: 50%; /*redudant*/
     text-align: center;   
     margin-top: 0;    
     /*border-spacing: 5px; /* cellspacing:poor IE support for  this */
@@ -30,7 +30,7 @@ h1{
 #fish-table {
     display: table;   
     float:left;   
-    width: 50%;
+    width: 50%; /*redudant*/
     vertical-align: middle; 
     text-align: center;            
     /*border-spacing: 5px; /* cellspacing:poor IE support for  this */
@@ -64,7 +64,7 @@ p{
 
 .unfinished-row{
     display: table-row-group;
-    width: 50%;
+    width: 50%; /*redudant*/
     /*padding: 10px;*/
     border:1px solid #ffffff;/**/
 }
